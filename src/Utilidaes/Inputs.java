@@ -20,7 +20,6 @@ public class Inputs <T> {
          T entrada = null;
          if (obj.equals(String.class)) {
              try {
-                 System.out.println("error1");
                 String input = scan.nextLine();
                 entrada = (T) input;
                 System.out.println(input);

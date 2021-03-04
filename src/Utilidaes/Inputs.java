@@ -8,29 +8,29 @@ import java.util.function.Supplier;
 
 public class Inputs <T> {
 
-     private  T t;
 
      public Inputs(){
 
      }
 
-     public T input (String mensaje , T obj){
-         t = obj;
+     public T input (String mensaje , Object obj){
+
          Scanner scan = new Scanner(System.in);
          System.out.println(mensaje);
          T entrada = null;
-         if ((t.getClass().equals(String.class))) {
+         if (obj.equals(String.class)) {
              try {
-
+                 System.out.println("error1");
                 String input = scan.nextLine();
                 entrada = (T) input;
+                System.out.println(input);
              }
              catch (Exception e){
                  System.out.println("Ingrese una entrada valida");
              }
          }else{
              try {
-
+                 System.out.println("error");
                  Integer  input = scan.nextInt();
                  entrada = (T) input;
 

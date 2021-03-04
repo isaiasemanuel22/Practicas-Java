@@ -19,7 +19,7 @@ public class Inputs <T> {
          Scanner scan = new Scanner(System.in);
          System.out.println(mensaje);
          T entrada = null;
-         if ((t.getClass().getName()) == ("obj".getClass().getName())) {
+         if ((t.getClass().equals(String.class))) {
              try {
 
                 String input = scan.nextLine();

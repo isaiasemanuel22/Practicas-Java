@@ -15,6 +15,7 @@ public class UserController {
 
     public void  createUser(){
 <<<<<<< HEAD
+<<<<<<< HEAD
         User newuser = new User();
 
         newuser.setName(new Inputs<String>().input("Ingrese un nombre" ,String.class));
@@ -26,6 +27,8 @@ public class UserController {
         newuser.setAge(new Inputs<Integer>().input("Ingrese una edad" , Integer.class));
         System.out.println("edad: " + newuser.getAge());
 =======
+=======
+>>>>>>> 9eebe9e7f0408df5805f6bae70189d10a4bb3f4b
         User usernuevo = new User();
 
         usernuevo.setName(new Inputs<String>().input("Ingrese un nombre" , "obj"));
@@ -36,7 +39,10 @@ public class UserController {
 
         usernuevo.setAge(new Inputs<Integer>().input("Ingrese una edad" , 1));
         System.out.println("edad: " + usernuevo.getAge());
+<<<<<<< HEAD
 >>>>>>> refs/remotes/java/master
+=======
+>>>>>>> 9eebe9e7f0408df5805f6bae70189d10a4bb3f4b
     }
 
 

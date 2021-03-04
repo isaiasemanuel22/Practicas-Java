@@ -7,14 +7,16 @@ import java.util.List;
 
 public class RepoUsers {
 
-    private static RepoUsers instance = null;
+    private static RepoUsers instance ;
     private List<User> listUsers;
 
     private RepoUsers (){
+        System.out.println("error1");
         listUsers = new LinkedList<User>();
+        System.out.println("error2");
     }
 
-    public RepoUsers getInstance(){
+    public static RepoUsers getInstance(){
         if(instance == null){
             instance = new RepoUsers();
         }

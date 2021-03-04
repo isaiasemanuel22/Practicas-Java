@@ -6,18 +6,19 @@ import Utilidaes.Inputs;
 
 public class UserController {
 
-    private static RepoUsers listUsers;
-    private User user;
+    private RepoUsers listUsers;
 
     public UserController(){
-     this.listUsers = listUsers.getInstance();
+        listUsers = listUsers.getInstance();
+
     }
 
     public void  createUser(){
         String obj = "obj";
+        User usernuevo = new User();
         System.out.println("Ingrese nombre de usuario");
-        user.setName(new Inputs<String>().input("Ingrese un nombre" , obj ));
-
+        usernuevo.setName(new Inputs<String>().input("Ingrese un nombre" , obj));
+        System.out.println("nombre: " + usernuevo.getName());
     }
 
 

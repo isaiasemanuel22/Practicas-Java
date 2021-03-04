@@ -22,23 +22,26 @@ public class Inputs <T> {
          T entrada = null;
          if ((t.getClass().getName()) == (obj1.getClass().getName())) {
              try {
-                entrada = (T)scan.nextLine();
+                 System.out.println("entro 1");
+                String input = scan.nextLine();
+                entrada = (T) input;
              }
              catch (Exception e){
                  System.out.println("Ingrese una entrada valida");
              }
          }else{
              try {
-                 Integer input = scan.nextInt();
+                 System.out.println("entro 2");
+                 Integer  input = scan.nextInt();
                  entrada = (T) input;
 
              }
-             catch (InputMismatchException ex){
+             catch (Exception e){
                  System.out.println("Ingrese una entrada valida");
              }
          }
 
-
+         System.out.println("entro");
          return entrada;
      }
 }

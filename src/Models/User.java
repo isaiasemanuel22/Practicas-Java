@@ -20,6 +20,7 @@ public class User {
     }
 
     public void setName(String name) {
+        System.out.println("name " + name );
         this.name = name;
     }
 

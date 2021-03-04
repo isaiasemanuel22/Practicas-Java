@@ -11,9 +11,7 @@ public class RepoUsers {
     private List<User> listUsers;
 
     private RepoUsers (){
-        System.out.println("error1");
         listUsers = new LinkedList<User>();
-        System.out.println("error2");
     }
 
     public static RepoUsers getInstance(){

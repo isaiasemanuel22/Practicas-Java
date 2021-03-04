@@ -18,11 +18,10 @@ public class Inputs <T> {
          t = obj;
          Scanner scan = new Scanner(System.in);
          System.out.println(mensaje);
-         String obj1="obj1";
          T entrada = null;
-         if ((t.getClass().getName()) == (obj1.getClass().getName())) {
+         if ((t.getClass().getName()) == ("obj".getClass().getName())) {
              try {
-                 System.out.println("entro 1");
+
                 String input = scan.nextLine();
                 entrada = (T) input;
              }
@@ -31,7 +30,7 @@ public class Inputs <T> {
              }
          }else{
              try {
-                 System.out.println("entro 2");
+
                  Integer  input = scan.nextInt();
                  entrada = (T) input;
 
@@ -41,7 +40,6 @@ public class Inputs <T> {
              }
          }
 
-         System.out.println("entro");
          return entrada;
      }
 }

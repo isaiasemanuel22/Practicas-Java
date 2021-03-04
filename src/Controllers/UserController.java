@@ -14,11 +14,16 @@ public class UserController {
     }
 
     public void  createUser(){
-        String obj = "obj";
         User usernuevo = new User();
-        System.out.println("Ingrese nombre de usuario");
-        usernuevo.setName(new Inputs<String>().input("Ingrese un nombre" , obj));
+
+        usernuevo.setName(new Inputs<String>().input("Ingrese un nombre" , "obj"));
         System.out.println("nombre: " + usernuevo.getName());
+
+        usernuevo.setLastname(new Inputs<String>().input("Ingrese un apellido" , "obj"));
+        System.out.println("apellido: " + usernuevo.getLastname());
+
+        usernuevo.setAge(new Inputs<Integer>().input("Ingrese una edad" , 1));
+        System.out.println("edad: " + usernuevo.getAge());
     }
 
 

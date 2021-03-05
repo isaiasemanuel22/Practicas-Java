@@ -11,7 +11,7 @@ public class RepoUsers {
     private List<User> listUsers;
 
     private RepoUsers (){
-        listUsers = new LinkedList<User>();
+        this.listUsers = new LinkedList<User>();
     }
 
     public static RepoUsers getInstance(){
@@ -32,7 +32,7 @@ public class RepoUsers {
     public User getUser(String name, String lastname){
         User user = null;
         for (int  i = 0 ; i < this.listUsers.size() ; i++){
-            if(this.listUsers.get(i).getName() == name && this.listUsers.get(i).getLastname() == lastname){
+            if(this.listUsers.get(i).getName().equals(name) && this.listUsers.get(i).getLastname().equals(lastname)){
                 user = this.listUsers.get(i);
             }
         }
